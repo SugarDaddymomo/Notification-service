@@ -1,0 +1,48 @@
+group welcome_email;
+
+welcome_email(userEmail, userName) ::= <<
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Email</title>
+    <style>
+        /* Define your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Development Circle, <span style="color: #ff6600;">$userName$</span>!</h1>
+        <p>We are thrilled to have you join us.</p>
+        <p>Thank you for choosing us.</p>
+        <p class="footer">Best regards,<br>Development Circle Team</p>
+    </div>
+</body>
+</html>
+>>

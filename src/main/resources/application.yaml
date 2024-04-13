@@ -13,6 +13,22 @@ eureka:
 spring:
   application:
     name: Notification Service
+  mail:
+    host: localhost
+    port: 1025
+    username: ashutosh
+    password: mailpassword
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: false
+          ssl:
+            trust: false
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
   kafka:
     bootstrap-servers: localhost:9092
     producer:
